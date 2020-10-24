@@ -1,0 +1,62 @@
+@import 'reset';
+@import '_variables';
+@import 'header/_header-nav';
+@import 'header/_header-hero';
+@import 'main/_main-story';
+@import 'main/_main-products';
+@import 'main/_main-references';
+@import 'main/_main-magazine';
+@import 'main/_main-blog';
+@import 'main/_main-newsletter';
+@import 'footer/_footer-contacts';
+
+
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// T Y P O G R A P H Y
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+$neueTypes: ('l':'Light', 'm':'Medium', 'r':'Regular', 'b':'Bold');
+
+@each $slug, $neueType in $neueTypes {
+   @font-face{
+      font-family: "neue-#{$slug}";
+      src: url("../fonts/NeueHaasUnica-#{$neueType}.woff") format("woff");
+   }
+}
+
+
+body{
+   font-family: 'Poppins', sans-serif; // Similar Stratos
+   font-weight: 300;
+   background: $light;
+}
+
+.container{
+   max-width: $max-width;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
+}
+
+.container-full{
+   max-width: 100%;
+   padding-left: 100px;
+   padding-right: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
+}
+
+.underlink{
+   font-size: 69.12px;
+   padding-bottom: 34px;
+   border-bottom: 2px solid #fff;
+   display: inline-block;  
+}
+

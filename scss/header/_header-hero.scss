@@ -1,0 +1,75 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// H E R O
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+.hero{
+   height: 859px;
+   position: relative;
+
+   img{
+      position: absolute;
+
+      &.hero1{
+         top: 60px;
+         left: calc(50% - 84px);
+         z-index: 3;
+      }
+
+      &.hero2{
+         top: 138px;
+         left: calc(50% - 355px);
+         z-index: 2;
+      }
+
+      &.hero3{
+         top: 72px;
+         left: calc(50% - 135px);
+         z-index: 1;
+      }
+
+      &.hero4{
+         top: 0;
+         left: calc(50% - 244px);
+         z-index: 0;
+      }
+
+   } // img
+
+   .slogan{
+      font-family: "futura-b";
+      font-size: 20px;
+      position: absolute;
+      bottom: 76px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      &::before{
+         content: '';
+         display: block;
+         height: 2px;
+         background: $dark;
+         align-self: center;
+         width: 63.18px;
+         margin-right: 18px;
+      }
+
+   } // .slogan
+
+   .lang{
+      font-family: "neue-r";
+      font-size: 27.78px;
+      position: absolute;
+      top: calc(50% - 113px);
+      right: 34px;
+      transform: rotate(-90deg);
+      z-index: 4;
+   }
+
+} // .hero

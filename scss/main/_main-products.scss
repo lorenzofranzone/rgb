@@ -1,0 +1,56 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// P R O D U C T S
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.products{
+   
+   .prod_row{
+      display: flex;
+      align-items: center;
+      
+      .products_text{
+         flex: 1;
+         padding: 156px 190px 156px 160px;
+         font-size: 27.78px;
+         line-height: 38px;
+      } // .products_text
+      
+      .products_image{
+         position: relative;
+         background: $color1;
+         flex: 1;
+         padding: 156px 160px 156px 190px;
+
+         .prod_title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+         } // .prod_title
+
+      } // .products_image
+      
+   } // .prod_row
+
+   .prod_row:nth-child(2){
+
+      .products_text{
+         padding-top: 0;
+         padding-bottom: 0;
+      } // .products_text
+      
+      .products_image{
+         padding-top: 0;
+         padding-bottom: 0;
+      } // .products_image
+
+   } // ..prod_row(2)
+   
+} // .products

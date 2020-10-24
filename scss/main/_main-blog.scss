@@ -1,0 +1,48 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// B L O G
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.blog{
+   background: #fff;
+   padding: 60px 0 250px;
+
+   .container-full{
+
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .blog_post{
+         width: 485px;
+
+         img{ margin-bottom: 16px; }
+         
+         .date{
+            font-size: 29.12px;
+            margin-bottom: 16px;
+         }
+         
+         .text{
+            font-size: 27.78px;
+            line-height: 35px;
+            margin-bottom: 48px;
+         }
+         
+         .link{
+            font-size: 19.27px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid $dark;
+            color: $dark;
+            text-decoration: none;
+         }
+
+      }
+
+   } // .container
+   
+} // .references

@@ -1,0 +1,537 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding-top: 96px;
+  padding-bottom: 84px;
+}
+
+header .h_nav_lx,
+header .h_nav_rx {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 4px;
+  font-size: 27.78px;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .h_nav_lx a,
+header .h_nav_rx a {
+  color: #000;
+  font-family: "neue-r";
+  text-decoration: none;
+}
+
+header .h_nav_logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+header .h_nav_logo img {
+  height: 47.19px;
+}
+
+header .h_nav_rx {
+  text-align: right;
+}
+
+.hero {
+  height: 859px;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+}
+
+.hero img.hero1 {
+  top: 60px;
+  left: calc(50% - 84px);
+  z-index: 3;
+}
+
+.hero img.hero2 {
+  top: 138px;
+  left: calc(50% - 355px);
+  z-index: 2;
+}
+
+.hero img.hero3 {
+  top: 72px;
+  left: calc(50% - 135px);
+  z-index: 1;
+}
+
+.hero img.hero4 {
+  top: 0;
+  left: calc(50% - 244px);
+  z-index: 0;
+}
+
+.hero .slogan {
+  font-family: "futura-b";
+  font-size: 20px;
+  position: absolute;
+  bottom: 76px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.hero .slogan::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #000;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 63.18px;
+  margin-right: 18px;
+}
+
+.hero .lang {
+  font-family: "neue-r";
+  font-size: 27.78px;
+  position: absolute;
+  top: calc(50% - 113px);
+  right: 34px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  z-index: 4;
+}
+
+.story {
+  text-align: center;
+  padding-top: 162px;
+  padding-bottom: 467px;
+}
+
+.story p {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 90px;
+}
+
+.story .link {
+  padding-bottom: 18px;
+  position: relative;
+  font-size: 19.29px;
+}
+
+.story .link::after {
+  content: '';
+  display: block;
+  width: 98%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.products .prod_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .prod_row .products_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 156px 190px 156px 160px;
+  font-size: 27.78px;
+  line-height: 38px;
+}
+
+.products .prod_row .products_image {
+  position: relative;
+  background: #D1CCC7;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 156px 160px 156px 190px;
+}
+
+.products .prod_row .products_image .prod_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.products .prod_row:nth-child(2) .products_text {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.products .prod_row:nth-child(2) .products_image {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.references {
+  background: #BCBCBC;
+  padding: 180px 0 90px;
+}
+
+.references .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.references .container .image {
+  margin-bottom: 86px;
+  position: relative;
+}
+
+.references .container .image .ref_title {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.references .container .image .arr {
+  position: absolute;
+  bottom: 90px;
+  right: 19px;
+}
+
+.references .container .legend {
+  color: #fff;
+  font-size: 19.29px;
+}
+
+.magazine {
+  background: #F7F7F5;
+  padding: 118px 0 60px;
+}
+
+.magazine .container-full {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.magazine .container-full .mag-lx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.magazine .container-full .mag-lx .title {
+  font-family: "neue-r";
+  font-size: 48px;
+  margin-right: 67px;
+}
+
+.magazine .container-full .mag-lx .text {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  font-size: 19px;
+  line-height: 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.magazine .container-full .mag-rx img {
+  margin-right: 35px;
+}
+
+.blog {
+  background: #fff;
+  padding: 60px 0 250px;
+}
+
+.blog .container-full {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.blog .container-full .blog_post {
+  width: 485px;
+}
+
+.blog .container-full .blog_post img {
+  margin-bottom: 16px;
+}
+
+.blog .container-full .blog_post .date {
+  font-size: 29.12px;
+  margin-bottom: 16px;
+}
+
+.blog .container-full .blog_post .text {
+  font-size: 27.78px;
+  line-height: 35px;
+  margin-bottom: 48px;
+}
+
+.blog .container-full .blog_post .link {
+  font-size: 19.27px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.newsletter {
+  background: #D6D7D1;
+  padding: 140px 0 105px;
+  text-align: center;
+}
+
+.newsletter .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletter .container .text {
+  font-size: 27.78px;
+  line-height: 38px;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.newsletter .container .underlink {
+  border-bottom: 2px solid #000;
+  margin-top: 70px;
+}
+
+.newsletter .container .underlink::after {
+  content: url("../../img/newsarr.svg");
+  margin-left: 56px;
+}
+
+.contacts {
+  background: #90968B;
+  padding: 140px 0 105px;
+}
+
+.contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 322px;
+  text-align: center;
+}
+
+.contacts .container .text {
+  font-size: 27.78px;
+  line-height: 38px;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.contacts .container .underlink {
+  color: #fff;
+  font-size: 143.33px;
+  padding-bottom: 64px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.contacts .container-full {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #fff;
+  font-size: 19.29;
+  line-height: 30px;
+}
+
+.contacts .container-full .company {
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
+}
+
+.contacts .container-full .infos {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+.contacts .container-full .social {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .container-full .social .social_accounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 42px;
+}
+
+.contacts .container-full .social .social_accounts li:not(:first-child) {
+  margin-left: 26px;
+}
+
+@font-face {
+  font-family: "neue-l";
+  src: url("../fonts/NeueHaasUnica-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "neue-m";
+  src: url("../fonts/NeueHaasUnica-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "neue-r";
+  src: url("../fonts/NeueHaasUnica-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "neue-b";
+  src: url("../fonts/NeueHaasUnica-Bold.woff") format("woff");
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background: #F7F7F5;
+}
+
+.container {
+  max-width: 1490px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-full {
+  max-width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.underlink {
+  font-size: 69.12px;
+  padding-bottom: 34px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+/*# sourceMappingURL=app.css.map */

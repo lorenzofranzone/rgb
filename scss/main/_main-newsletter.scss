@@ -1,0 +1,40 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// N E W S L E T T E R
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.newsletter{
+   background: $color2;
+   padding: 140px 0 105px;
+   text-align: center;
+
+   .container{
+      flex-direction: column;
+      justify-content: center;
+
+      .text{
+         font-size: 27.78px;
+         line-height: 38px;
+         padding-left: 190px;
+         padding-right: 190px;
+      }
+      
+      .underlink{
+         border-bottom: 2px solid $dark;
+         margin-top: 70px;
+
+         &::after{
+            content: url('../../img/newsarr.svg');
+            margin-left: 56px;
+         }
+
+      }
+
+   } // .container
+   
+} // .references

@@ -1,0 +1,45 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// M A G A Z I N E
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.magazine{
+   background: $light;
+   padding: 118px 0 60px;
+
+   .container-full{
+
+      justify-content: space-between;
+
+      .mag-lx{
+         display: flex;
+
+         .title{
+            font-family: "neue-r";
+            font-size: 48px;
+            margin-right: 67px;
+         }
+
+         .text{
+            align-self: baseline;
+            font-size: 19px;
+            line-height: 30px;
+            align-self: flex-end;
+         }
+
+      } // .mag-lx
+
+      .mag-rx{
+
+         img{ margin-right: 35px; }
+
+      } // .mag-lx
+
+   } // .container
+   
+} // .references

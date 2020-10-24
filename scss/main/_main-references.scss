@@ -1,0 +1,49 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// R E F E R E N C E S
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.references{
+   background: $color3;
+   padding: 180px 0 90px;
+
+   .container{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .image{
+         margin-bottom: 86px;
+         position: relative;
+
+         .ref_title{
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: inline-block;
+         }
+
+         .arr{
+            position: absolute;
+            bottom: 90px;
+            right: 19px;
+         } // .arr
+
+      } // .image
+
+      .legend{
+         color: #fff;
+         font-size: 19.29px;
+      }
+
+   } // .container
+   
+} // .references

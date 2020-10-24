@@ -1,0 +1,70 @@
+//
+// ==================================================
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// C O N T A C T S
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// ==================================================
+//
+
+@import '../_variables';
+
+.contacts{
+   background: $color4;
+   padding: 140px 0 105px;
+
+   a{ color: #fff; text-decoration: none; }
+   
+   .container{
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 322px;
+      text-align: center;
+
+      .text{
+         font-size: 27.78px;
+         line-height: 38px;
+         padding-left: 190px;
+         padding-right: 190px;
+      }
+      
+      .underlink{
+         color: #fff;
+         font-size: 143.33px;
+         padding-bottom: 64px;
+         padding-left: 33px;
+         padding-right: 33px;
+      }
+
+   } // .container
+
+   .container-full{
+      align-items: flex-start;
+      color: #fff;
+      font-size: 19.29;
+      line-height: 30px;
+
+      .company{
+         flex: 35%;
+      } // .company
+      
+      .infos{
+         flex: 40%;
+      } // .infos
+      
+      .social{
+         flex: 25%;
+         display: flex;
+
+         .social_accounts{
+            display: flex;
+            margin-left: 42px;
+
+            li:not(:first-child){
+               margin-left: 26px;
+            }
+         }
+      } // .social
+
+   } // .container-full
+   
+} // .references
